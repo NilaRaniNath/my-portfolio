@@ -7,6 +7,10 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 export const metadata: Metadata = {
   title: "Nila Rani Nath | Web Developer Portfolio",
   description: "Professional portfolio of Nila Rani Nath, a Web Developer specializing in modern digital experiences.",
+  icons: {
+    icon: "/nila logo.png",
+    apple: "/nila logo.png",
+  }
 };
 
 import SmoothScroll from "@/components/animations/SmoothScroll";

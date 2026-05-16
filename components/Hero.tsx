@@ -82,7 +82,7 @@ export default function Hero() {
               alt="Profile"
               fill
               className="object-cover relative z-10 transition-transform duration-1000 group-hover:scale-105 contrast-[1.1] brightness-[1.1]"
-              style={{ 
+              style={{
                 maskImage: 'radial-gradient(circle, black 70%, transparent 100%)',
                 WebkitMaskImage: 'radial-gradient(circle, black 70%, transparent 100%)'
               }}
@@ -91,7 +91,7 @@ export default function Hero() {
             {/* Lightened Overlays */}
             <div className="absolute inset-0 bg-white/5 z-20 pointer-events-none" />
             <div className="absolute inset-0 bg-accent-coral/5 mix-blend-soft-light z-20 pointer-events-none" />
-            
+
             {/* Subtle vignette instead of heavy shadow */}
             <div className="absolute inset-0 shadow-[inset_0_0_60px_rgba(15,23,42,0.4)] z-30 pointer-events-none" />
           </div>
