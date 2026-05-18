@@ -106,7 +106,7 @@ export default function Projects() {
       {/* Detailed Project Modal */}
       <AnimatePresence>
         {selectedProject && (
-          <div className="fixed inset-0 z-[100] flex items-center justify-center px-6">
+          <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-6">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -120,70 +120,70 @@ export default function Projects() {
               animate={{ y: 0, opacity: 1, scale: 1 }}
               exit={{ y: 50, opacity: 0, scale: 0.95 }}
               data-lenis-prevent
-              className="relative w-full max-w-4xl bg-gray-900 rounded-[2.5rem] border border-gray-800 overflow-hidden max-h-[90vh] overflow-y-auto custom-scrollbar"
+              className="relative w-full max-w-4xl bg-gray-900 rounded-2xl md:rounded-[2.5rem] border border-gray-800 overflow-hidden max-h-[95vh] md:max-h-[90vh] overflow-y-auto custom-scrollbar"
             >
               <button
                 onClick={() => setSelectedProject(null)}
-                className="absolute top-8 right-8 z-10 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors"
+                className="absolute top-4 right-4 md:top-8 md:right-8 z-10 w-10 h-10 md:w-12 md:h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors"
               >
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path d="M6 18L18 6M6 6l12 12" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path>
                 </svg>
               </button>
 
-              <div className="p-8 lg:p-16 space-y-12">
-                <div className="space-y-4">
-                  <div className="text-accent-coral font-bold uppercase tracking-widest text-sm">
+              <div className="p-6 md:p-8 lg:p-16 space-y-8 md:space-y-12 mt-8 md:mt-0">
+                <div className="space-y-3 md:space-y-4">
+                  <div className="text-accent-coral font-bold uppercase tracking-widest text-xs md:text-sm">
                     {selectedProject.category}
                   </div>
-                  <h2 className="text-4xl lg:text-6xl font-bold text-white leading-tight">
+                  <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white leading-tight">
                     {selectedProject.title}
                   </h2>
                 </div>
 
-                <div className="grid lg:grid-cols-2 gap-12">
-                  <div className="space-y-10">
+                <div className="grid lg:grid-cols-2 gap-8 md:gap-12">
+                  <div className="space-y-8 md:space-y-10">
                     <div>
-                      <h4 className="text-white font-bold uppercase tracking-widest text-xs mb-4">Description</h4>
-                      <p className="text-gray-400 text-lg leading-relaxed">{selectedProject.description}</p>
+                      <h4 className="text-white font-bold uppercase tracking-widest text-xs mb-3 md:mb-4">Description</h4>
+                      <p className="text-gray-400 text-base md:text-lg leading-relaxed">{selectedProject.description}</p>
                     </div>
 
                     <div>
-                      <h4 className="text-white font-bold uppercase tracking-widest text-xs mb-4">Main Technology Stack</h4>
-                      <div className="flex flex-wrap gap-3">
+                      <h4 className="text-white font-bold uppercase tracking-widest text-xs mb-3 md:mb-4">Main Technology Stack</h4>
+                      <div className="flex flex-wrap gap-2 md:gap-3">
                         {selectedProject.techStack.map(tech => (
-                          <span key={tech} className="bg-white/5 border border-white/10 px-4 py-2 rounded-lg text-sm text-gray-300">
+                          <span key={tech} className="bg-white/5 border border-white/10 px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm text-gray-300">
                             {tech}
                           </span>
                         ))}
                       </div>
                     </div>
 
-                    <div className="flex gap-6">
+                    <div className="flex flex-col sm:flex-row gap-4 md:gap-6">
                       <Magnetic strength={0.3}>
-                        <a href={selectedProject.live} className="bg-white text-black px-8 py-4 rounded-full font-bold hover:bg-accent-coral hover:text-white transition-all">
+                        <a href={selectedProject.live} className="w-full sm:w-auto text-center block bg-white text-black px-6 py-3 md:px-8 md:py-4 rounded-full font-bold hover:bg-accent-coral hover:text-white transition-all text-sm md:text-base">
                           Live Project
                         </a>
                       </Magnetic>
                       <Magnetic strength={0.3}>
-                        <a href={selectedProject.github} className="border border-gray-800 text-white px-8 py-4 rounded-full font-bold hover:border-white transition-all">
+                        <a href={selectedProject.github} className="w-full sm:w-auto text-center block border border-gray-800 text-white px-6 py-3 md:px-8 md:py-4 rounded-full font-bold hover:border-white transition-all text-sm md:text-base">
                           GitHub Repo
                         </a>
                       </Magnetic>
                     </div>
                   </div>
 
-                  <div className="space-y-10">
+                  <div className="space-y-8 md:space-y-10">
                     <div>
-                      <h4 className="text-white font-bold uppercase tracking-widest text-xs mb-4">Challenges Faced</h4>
-                      <p className="text-gray-400 leading-relaxed italic border-l-2 border-accent-coral pl-6">
+                      <h4 className="text-white font-bold uppercase tracking-widest text-xs mb-3 md:mb-4">Challenges Faced</h4>
+                      <p className="text-gray-400 text-base md:text-lg leading-relaxed italic border-l-2 border-accent-coral pl-4 md:pl-6">
                         "{selectedProject.challenges}"
                       </p>
                     </div>
 
                     <div>
-                      <h4 className="text-white font-bold uppercase tracking-widest text-xs mb-4">Future Plans & Improvements</h4>
-                      <p className="text-gray-400 leading-relaxed">
+                      <h4 className="text-white font-bold uppercase tracking-widest text-xs mb-3 md:mb-4">Future Plans & Improvements</h4>
+                      <p className="text-gray-400 text-base md:text-lg leading-relaxed">
                         {selectedProject.futurePlans}
                       </p>
                     </div>
