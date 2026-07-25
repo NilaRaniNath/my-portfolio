@@ -22,27 +22,27 @@ const projects = [
   },
   {
     id: 2,
-    title: "Keen Keeper! 🚀",
-    category: "React / Tailwind CSS",
-    description: "It's a friendship management web app built with React and Tailwind CSS that helps users stay connected with their loved ones through smart tracking and analytics. This project helped me dive deeper into Context API, Dynamic Routing, and Data Visualization.",
-    image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=1600",
-    techStack: ["React", "Tailwind CSS", "React Router Dom"],
-    live: "https://keen-keeper-alpha-nine.vercel.app/",
-    github: "https://github.com/NilaRaniNath/keen-keeper",
-    challenges: "Efficiently managing dynamic relationship statuses and real-time interaction logs using Context API, while implementing complex filtering logic for the timeline without affecting application performance.",
-    futurePlans: "I plan to integrate automated reminder notifications (Email/SMS) for overdue connections and implement advanced data visualization libraries (like Recharts) for deeper social analytics."
+    title: "SportNest: Sports Facility Booking Platform 🚀",
+    category: "Fullstack / Next.js & Express",
+    description: "SportNest is a modern, dynamic, and user-friendly Sports Facility Booking Platform bridging the gap between sports enthusiasts and facility owners to discover, explore, and seamlessly book sports turfs, courts, pools, and gyms.",
+    image: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&q=80&w=1600",
+    techStack: ["Next.js", "Express.js", "MongoDB", "Tailwind CSS", "Lucide React"],
+    live: "https://sport-nest-flax.vercel.app",
+    github: "https://github.com/NilaRaniNath/sport-nest-client",
+    challenges: "Implementing real-time slot booking and seat capacity management while ensuring secure authentication with token-based verification and seamless session handling.",
+    futurePlans: "Integrating automated payment gateways for instant booking confirmations, adding interactive venue map search, and introducing user review and rating systems."
   },
   {
     id: 3,
-    title: "DigiTools Platforms 🚀",
-    category: "React / Tailwind CSS",
-    description: "A comprehensive platform designed to empower creators, developers, and businesses with a suite of AI-driven tools. From content generation to smart automation DigiTools streamlines your workflow so you can focus on what truly matters.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1600",
-    techStack: ["React js", "Tailwind CSS", "DaisyUI"],
-    live: "https://digitoolsplatformsproject.netlify.app/",
-    github: "https://github.com/NilaRaniNath/DigiTools-Platforms",
-    challenges: "Integrating multiple AI-driven APIs seamlessly while maintaining low latency, and managing state effectively for a large catalog of 2000+ templates with a clean DaisyUI design.",
-    futurePlans: "I plan to implement user authentication with personalized dashboards and introduce a premium subscription model with secure payment gateways for advanced AI tools."
+    title: "LegalEase: Lawyer Marketplace 🚀",
+    category: "Fullstack / Next.js & MERN",
+    description: "LegalEase is a modern, responsive full-stack platform designed to bridge the gap between clients and professional legal practitioners. Users can explore verified legal consultants, book consultation slots, view hiring histories, and manage profiles seamlessly.",
+    image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=1600",
+    techStack: ["Next.js", "Express.js", "MongoDB", "Stripe", "Tailwind CSS", "Better-Auth"],
+    live: "https://legal-ease-two-silk.vercel.app",
+    github: "https://github.com/NilaRaniNath/legalease-client",
+    challenges: "Handling complex authentication and session management with Better-Auth, integrating Stripe checkouts for listing activation, and optimizing MongoDB connection pooling for serverless deployments on Vercel.",
+    futurePlans: "Adding real-time in-app video consultation tools, AI-powered legal document drafting assistance, and multi-currency payout options for international legal experts."
   }
 ];
 

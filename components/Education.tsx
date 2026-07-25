@@ -7,22 +7,16 @@ import TextReveal from "./animations/TextReveal";
 
 const educationData = [
   {
-    degree: "B.Sc Honours",
+    degree: "B.Sc Honours (Running)",
     institution: "National University, Bangladesh",
     duration: "2022 - Present",
-    description: "Studying CHEMISTRY Department."
+    description: "Currently pursuing B.Sc in the Department of Chemistry."
   },
   {
     degree: "Higher Secondary Certificate (HSC)",
     institution: "Sylhet Govt. College",
     duration: "2019 - 2021",
-    description: "Completed Science group with a strong foundation in Mathematics and Physics."
-  },
-  {
-    degree: "Secondary School Certificate (SSC)",
-    institution: "Jafrabad High School & College",
-    duration: "2018 - 2019",
-    description: "Completed with high excellence, sparking my initial interest in technology."
+    description: "Achieved GPA 5.00 (Science Group) with a strong foundation in Mathematics, Chemistry, and Physics."
   }
 ];
 
